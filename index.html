@@ -1,0 +1,29 @@
+<! DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href='http://fonts.googleapis.com/css?family=Domine|Montserrat' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="skeleton.css">
+    <script src="http://d3js.org/d3.v3.min.js"></script>
+    <script type="text/javascript" src="graphic.js"></script>
+    <script src="http://labratrevenge.com/d3-tip/javascripts/d3.tip.v0.6.3.js"></script>
+    <script type="text/javascript" src="https://pym.nprapps.org/pym.v1.min.js"></script>
+    <script type="text/javascript" src="data.json"></script>
+</head>
+<body>
+    <div class="bucket">
+        <h4>Vote for Vice-President</h4>
+        <h6>Click below to see exactly how things went south.</h6>
+        <button id="deal1">How they Voted</button>
+        <button id="deal2">How they were Meant to Vote</button>
+        <p id="explanation">Atia Rahim mistakenly voted for a presidential candidate, presumably Alisha. USU Ceo Andrew Woodword pointed this out (because pointing out that someone voted incorrectly in a 'secret' ballot is okay). Everyone carried on for twenty minutes, before.</p>
+    </div>
+    <svg class="graphic"></svg>
+    <script>
+        var pymChild = new pym.Child();
+        pymChild.sendHeight();
+        init();
+    </script>
+</body>
+</html>
